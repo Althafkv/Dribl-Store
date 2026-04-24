@@ -7,25 +7,25 @@ const categories = [
     name: "Jerseys",
     description: "Authentic team jerseys",
     image:
-      "https://images.unsplash.com/photo-1577212017184-80cc0da11082?w=800&q=80",
+      "https://images.unsplash.com/photo-1577212017184-80cc0da11082?w=400&q=60&auto=format",
   },
   {
     name: "Frames & Posters",
     description: "Iconic football moments",
     image:
-      "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80",
+      "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=400&q=60&auto=format",
   },
   {
     name: "Stickers",
     description: "Collectible fan stickers",
     image:
-      "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80",
+      "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&q=60&auto=format",
   },
   {
     name: "Keychains & Accessories",
     description: "Show your team pride",
     image:
-      "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80",
+      "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=60&auto=format",
   },
 ];
 
@@ -53,6 +53,8 @@ const Categories: React.FC = () => {
               <img
                 src={category.image}
                 alt={category.name}
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />

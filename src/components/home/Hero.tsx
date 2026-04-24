@@ -9,8 +9,9 @@ const Hero: React.FC = () => {
       {/* Hero Image Section */}
       <div className="relative h-[70vh] md:h-[85vh] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1000&q=60&auto=format"
           alt="Hero"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
@@ -24,8 +25,7 @@ const Hero: React.FC = () => {
                 Where Football Becomes a Lifestyle
               </h1>
               <p className="text-base md:text-lg text-white/70 max-w-lg">
-                Authentic jerseys, iconic frames, posters, keychains, and
-                collectibles — crafted for fans who live the game.
+                Authentic football merchandise crafted for true fans.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <Link to="/products">
