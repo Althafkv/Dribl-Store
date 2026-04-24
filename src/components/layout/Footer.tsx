@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-foreground text-background">
       {/* Newsletter Section */}
-      {/* <div className="border-b border-background/10">
+      <div className="border-b border-background/10">
         <div className="container py-16 md:py-20">
           <div className="max-w-xl mx-auto text-center space-y-4">
             <h3 className="font-display text-2xl md:text-3xl">
@@ -43,29 +43,29 @@ const Footer: React.FC = () => {
               </p>
             ) : (
               <form
-                onSubmit={handleSubmit}
-                className="flex gap-2 max-w-md mx-auto pt-2"
-              >
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  placeholder="Enter your email"
-                  className="flex-1 h-12 px-4 bg-background/10 border border-background/20 text-background placeholder:text-background/40 text-sm focus:outline-none focus:border-background/40"
-                />
+  onSubmit={handleSubmit}
+  className="flex flex-col sm:flex-row gap-2 max-w-md mx-auto pt-2 items-center"
+>
+  <input
+    type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    required
+    placeholder="Enter your email"
+    className="w-full sm:flex-1 h-12 px-4 bg-background/10 border border-background/20 text-background placeholder:text-background/40 text-sm focus:outline-none focus:border-background/40"
+  />
 
-                <button
-                  type="submit"
-                  className="h-12 px-6 bg-background text-foreground text-sm font-medium hover:bg-background/90 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
+  <button
+    type="submit"
+    className="h-10 px-5 w-auto bg-background text-foreground text-sm font-medium hover:bg-background/90 transition-colors"
+  >
+    Subscribe
+  </button>
+</form>
             )}
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Main Footer */}
       <div className="container py-12 md:py-16">
