@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-foreground text-background">
       {/* Newsletter Section */}
-      <div className="border-b border-background/10">
+      {/* <div className="border-b border-background/10">
         <div className="container py-16 md:py-20">
           <div className="max-w-xl mx-auto text-center space-y-4">
             <h3 className="font-display text-2xl md:text-3xl">
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer */}
       <div className="container py-12 md:py-16">
